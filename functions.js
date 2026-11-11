@@ -82,3 +82,63 @@ let val = sumRet( 2 , 3);
 console .log(val); // 5 q ka ab value go return hoi yhe wo val ma save  ho gai ha
 
 // jab hu function declation ma return likh data hain to fun ma return ka dbad koi code ni likha ja sakyta
+
+
+// ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+// function para meters ko local veriables kahta hain
+//  ya variables sirf fuction ki curlibarices ka between hi acessable hain ya in parameters ka scope khlata ha
+
+function local(x , y){
+    console.log (x - y ); // yhan x y ko use kia ja sakta ha
+}
+
+local(1 , 2);
+
+// console.log(x - y); // undefind yhan in ko use ni kar sakta 
+
+// yani in ka scope block hota ka ya ik kas block ka ander hi work karta ha
+
+// ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+// Arrow Functions
+
+// conpact way to write function 
+
+// const (1 data type declare kro)  funtion name = (parameters) => {
+ // funtion data
+// } }
+// hum is sa bi return la sakta hain
+
+
+// arrow version of sum funxction
+
+const arrowSum = (x, y) => {
+console.log (x + y);
+return x + y ;
+}
+
+console.log (arrowSum);
+
+arrowSum(10, 20);
+
+// arrow version of multiplication funxction
+
+const arrowmul = (x , y) =>{
+
+    console.log(`mte multiple of x and y is ${ x  * y }`);
+    return x * y ;
+}
+
+console.log (arrowmul);
+
+
+arrowmul(10, 20);
+
+//  these arrow functions are used for small tasks eg
+//  sum multiplicatin division substraxction etc
+
+
+// ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+// PROACTICE QUESTION NO 1
