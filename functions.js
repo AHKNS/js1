@@ -98,8 +98,8 @@ local(1 , 2);
 // console.log(x - y); // undefind yhan in ko use ni kar sakta 
 
 // yani in ka scope block hota ka ya ik kas block ka ander hi work karta ha
-
 // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
 
 // Arrow Functions
 
@@ -142,3 +142,18 @@ arrowmul(10, 20);
 // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 // PROACTICE QUESTION NO 1
+function vowels(str){
+    let count = 0;
+    for(val of str){
+     console.log(val);
+        if(val === "a" || val === "e" || val === "i" || val === "o" || val === "u"){
+            count ++ ;
+        }
+
+    }
+
+        console.log(count);
+        return count ;
+}
+
+vowels("aeiou");
