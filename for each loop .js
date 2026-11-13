@@ -7,10 +7,16 @@
 //  the function that passed to another function as argument is called call back function
 
 
-example :
+// example :
 
 let arr = [1 ,2 ,2 , 4] ;
 
-arr.forEach(function printVal(a) {
-    console.log(a);
-});
+arr .forEach((value) =>{
+    console.log(value);
+})
+
+let tarr = ["pak" ,"ind" , "afg" , "kor"] ;
+
+tarr .forEach((value , idx , tarr) =>{
+    console.log(value.toUpperCase(), idx ,tarr);
+})
