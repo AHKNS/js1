@@ -157,3 +157,31 @@ function vowels(str){
 }
 
 vowels("aeiou");
+
+// Question no 2
+let vowel = (x) => {
+    let cou = 0;
+
+    for (let text of x) {
+        console.log(text);
+
+        if (text === "a" || text === "e" || text === "i" || text === "o" || text === "u") {
+            cou++;
+        }
+    }
+
+    return cou;
+};
+
+console.log(vowel("hassan"));
+
+
+// -> we can also use functions as parameters means we can pass or receive fuction as value in another function or array
+
+function abc () {
+console.log ("hello world");
+}
+
+function myfunction (abc){
+    return abc;
+}
